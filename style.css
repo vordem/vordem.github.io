@@ -26,6 +26,8 @@ a {
 
 main p {
   padding: 0 2em;
+  margin: 0 auto;
+  max-width: 25em;
 }
 
 .rotate {
