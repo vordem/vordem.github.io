@@ -1,6 +1,6 @@
 body {
   margin: 0 auto;
-  padding: 2em 1em;
+  padding: 1em 1em;
   max-width: 50em;
 
   font-family: "Abel", "Helvetica", "Arial", sans-serif;
@@ -8,6 +8,8 @@ body {
   -webkit-font-smoothing: antialiased;
   text-align: center;
   color: #555;
+
+  background: #EFEEED;
 }
 
 h1, h2 {
@@ -22,6 +24,10 @@ h1, h2, strong {
 a {
   color: #476bc1;
   text-decoration: none;
+}
+
+main, footer {
+  padding-bottom: 1em;
 }
 
 main p {
