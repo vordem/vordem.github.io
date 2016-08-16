@@ -20,3 +20,48 @@ h1, h2, strong {
 a {
   color: #476bc1;
 }
+
+main .rotate {
+  height: 2em;
+}
+
+main .rotate p {
+  position: absolute;
+  opacity: 0;
+  white-space: nowrap;
+  overflow: hidden;
+
+  -webkit-animation: rotateWords 9s linear infinite 0s;
+  -ms-animation: rotateWords 9s linear infinite 0s;
+  animation: rotateWords 9s linear infinite 0s;
+}
+
+main .rotate p:nth-child(2) {
+  -webkit-animation-delay: 3s;
+  -ms-animation-delay: 3s;
+  animation-delay: 3s;
+}
+main .rotate p:nth-child(3) {
+  -webkit-animation-delay: 6s;
+  -ms-animation-delay: 6s;
+  animation-delay: 6s;
+}
+
+@-webkit-keyframes rotateWords {
+  0% { opacity: 0; -webkit-animation-timing-function: ease-in; width: 0px;}
+  5% { opacity: 1; -webkit-animation-timing-function: ease-out; width: 100%;}
+  20% { opacity: 1; }
+  35% { opacity: 0; }
+}
+@-ms-keyframes rotateWords {
+  0% { opacity: 0; -ms-animation-timing-function: ease-in; width: 0px;}
+  5% { opacity: 1; -ms-animation-timing-function: ease-out; width: 100%;}
+  20% { opacity: 1; }
+  35% { opacity: 0; }
+}
+@keyframes rotateWords {
+  0% { opacity: 0; -webkit-animation-timing-function: ease-in; width: 0px;}
+  5% { opacity: 1; -webkit-animation-timing-function: ease-out; width: 100%;}
+  20% { opacity: 1; }
+  35% { opacity: 0; }
+}
