@@ -21,6 +21,7 @@ h1, h2, strong {
 
 a {
   color: #476bc1;
+  text-decoration: none;
 }
 
 main p {
