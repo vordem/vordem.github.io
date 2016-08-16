@@ -3,7 +3,9 @@ body {
   padding: 2em 1em;
   max-width: 50em;
 
-  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  font-family: "Lato", "Helvetica", "Arial", sans-serif;
+  -moz-osx-font-smoothing: antialiased;
+  -webkit-font-smoothing: antialiased;
   text-align: center;
   color: #555;
 }
