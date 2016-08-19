@@ -1,3 +1,2 @@
-FROM nginx
-COPY nginx.conf /etc/nginx/nginx.conf
-COPY index.html style.css /usr/share/nginx/html/
+FROM vordem/nginx-static-site
+COPY www /usr/share/nginx/html
