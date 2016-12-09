@@ -1,36 +1,84 @@
+@font-face {
+  font-family: Calibre;
+  font-style: normal;
+  src: url("fonts/Calibre-Regular.otf") format("opentype");
+}
+
+@font-face {
+  font-family: Calibre;
+  font-style: italic;
+  src: url("fonts/Calibre-RegularItalic.otf") format("opentype");
+}
+
+@font-face {
+  font-family: Calibre;
+  font-style: normal;
+  font-weight: bold;
+  src: url("fonts/Calibre-Semibold.otf") format("opentype");
+}
+
+@font-face {
+  font-family: Calibre;
+  font-style: italic;
+  font-weight: bold;
+  src: url("fonts/Calibre-SemiboldItalic.otf") format("opentype");
+}
+
+
 body {
   margin: 0 auto;
   padding: 1em 1em;
   max-width: 50em;
-
-  font-family: "Abel", "Helvetica", "Arial", sans-serif;
+  font-family: "Calibre", "Arial", sans-serif;
   -moz-osx-font-smoothing: antialiased;
   -webkit-font-smoothing: antialiased;
   text-align: center;
   color: #555;
-
-  background: #EFEEED;
+  background: #FFFFFF;
+  font-size: x-large;
 }
 
-h1, h2 {
-  margin-top: 1em;
-  padding-top: 1em;
+body main {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #000;
+  max-width: 90%;
 }
 
-h1, h2, strong {
-  color: #333;
+body main img {
+  max-width: 500px;
 }
 
-a {
-  color: #476bc1;
-  text-decoration: none;
-}
-
-main, footer {
+body main, body footer {
   padding-bottom: 1em;
 }
 
-main p {
+body footer {
+  position:fixed;
+  left:0px;
+  bottom:0px;
+  width:100%;
+  background: #000;
+  color: #fff;
+
+  text-align: right;
+  padding-bottom: 0px;
+  padding-top: 0.5em;
+}
+
+body footer img {
+  max-width: 200px;
+  margin-right: 3em;
+  margin-bottom: -10px;
+}
+
+a {
+  text-decoration: none;
+}
+
+p {
   padding: 0 2em;
   margin: 0 auto;
   max-width: 25em;
@@ -52,39 +100,27 @@ main p {
   left: 0;
   right: 0;
 
-  -webkit-animation: rotateWords 18s linear infinite 0s;
-  -ms-animation: rotateWords 18s linear infinite 0s;
-  animation: rotateWords 18s linear infinite 0s;
+  -webkit-animation: rotateWords 16s linear infinite 0s;
+  -ms-animation: rotateWords 16s linear infinite 0s;
+  animation: rotateWords 16s linear infinite 0s;
 }
 
 .rotate span:nth-child(2) {
-  -webkit-animation-delay: 3s;
-  -ms-animation-delay: 3s;
-  animation-delay: 3s;
+  -webkit-animation-delay: 4s;
+  -ms-animation-delay: 4s;
+  animation-delay: 4s;
 }
 
 .rotate span:nth-child(3) {
-  -webkit-animation-delay: 6s;
-  -ms-animation-delay: 6s;
-  animation-delay: 6s;
+  -webkit-animation-delay: 8s;
+  -ms-animation-delay: 8s;
+  animation-delay: 8s;
 }
 
 .rotate span:nth-child(4) {
-  -webkit-animation-delay: 9s;
-  -ms-animation-delay: 9s;
-  animation-delay: 9s;
-}
-
-.rotate span:nth-child(5) {
   -webkit-animation-delay: 12s;
   -ms-animation-delay: 12s;
   animation-delay: 12s;
-}
-
-.rotate span:nth-child(6) {
-  -webkit-animation-delay: 15s;
-  -ms-animation-delay: 15s;
-  animation-delay: 15s;
 }
 
 @-webkit-keyframes rotateWords {
@@ -108,7 +144,7 @@ main p {
     width: calc(100% - 2em);
     white-space: normal;
   }
-  20% {
+  30% {
     opacity: 0;
     width: calc(100% - 2em);
     white-space: normal;
@@ -140,7 +176,7 @@ main p {
     width: calc(100% - 2em);
     white-space: normal;
   }
-  20% {
+  30% {
     opacity: 0;
     width: calc(100% - 2em);
     white-space: normal;
@@ -172,7 +208,7 @@ main p {
     width: calc(100% - 2em);
     white-space: normal;
   }
-  20% {
+  30% {
     opacity: 0;
     width: calc(100% - 2em);
     white-space: normal;
