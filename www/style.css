@@ -1,27 +1,27 @@
 @font-face {
   font-family: Calibre;
   font-style: normal;
-  src: url("fonts/Calibre-Regular.otf") format("opentype");
+  src: url("assets/fonts/Calibre-Regular.otf") format("opentype");
 }
 
 @font-face {
   font-family: Calibre;
   font-style: italic;
-  src: url("fonts/Calibre-RegularItalic.otf") format("opentype");
+  src: url("assets/fonts/Calibre-RegularItalic.otf") format("opentype");
 }
 
 @font-face {
   font-family: Calibre;
   font-style: normal;
   font-weight: bold;
-  src: url("fonts/Calibre-Semibold.otf") format("opentype");
+  src: url("assets/fonts/Calibre-Semibold.otf") format("opentype");
 }
 
 @font-face {
   font-family: Calibre;
   font-style: italic;
   font-weight: bold;
-  src: url("fonts/Calibre-SemiboldItalic.otf") format("opentype");
+  src: url("assets/fonts/Calibre-SemiboldItalic.otf") format("opentype");
 }
 
 
@@ -76,8 +76,9 @@ body main {
   max-width: 90%;
 }
 
-body main img {
-  max-width: 500px;
+body header img {
+  float: left;
+  width: 100px;
 }
 
 body main, body footer {
