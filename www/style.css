@@ -27,7 +27,6 @@
 
 body {
   margin: 0 auto;
-  padding: 1em 1em;
   max-width: 50em;
   font-family: "Calibre", "Arial", sans-serif;
   -moz-osx-font-smoothing: antialiased;
@@ -40,14 +39,24 @@ body {
 
 body header {
   width: 100%;
-  padding: 7px 0;
+  padding-top: 4em;
+  position: relative;
+  display: inline-block;
+}
+
+body header img {
+  position: absolute;
+  top: 50%;
+  left: 2%;
+  transform: translateY(-50%);
+  width: 100px;
 }
 
 body header nav {
-  display: block;
-  float: right;
-  padding: 0;
-  position: static;
+  position: absolute;
+  top: 50%;
+  right: 2%;
+  transform: translateY(-50%);
 }
 
 body header nav ul {
@@ -64,7 +73,7 @@ body header nav ul li {
 body header nav ul li a {
   font-size: medium;
   font-weight: bold;
-  margin: 15px;
+  margin-left: 30px;
 }
 
 body main {
@@ -76,20 +85,15 @@ body main {
   max-width: 90%;
 }
 
-body header img {
-  float: left;
-  width: 100px;
-}
-
 body main, body footer {
   padding-bottom: 1em;
 }
 
 body footer {
-  position:fixed;
-  left:0px;
-  bottom:0px;
-  width:100%;
+  position: fixed;
+  left: 0px;
+  bottom: 0px;
+  width: 100%;
   background: #000;
   color: #fff;
 
@@ -99,9 +103,9 @@ body footer {
 }
 
 body footer img {
+  float: right;
+  margin-right: 2%;
   max-width: 200px;
-  margin-right: 3em;
-  margin-bottom: -10px;
 }
 
 a {
