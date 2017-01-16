@@ -1,4 +1,0 @@
-web:
-  image: vordem/vordem-mx
-  ports:
-    - "80:80"
