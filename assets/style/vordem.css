@@ -60,6 +60,10 @@ a {
   text-decoration: underline;
 }
 
+a:focus, a:hover {
+  color: #888;
+}
+
 .logo {
   width: 100%;
   max-width: 120px;
