@@ -102,27 +102,16 @@ header h1 {
   font-size: 25px;
   cursor: pointer;
   transition: all .2s ease;
-}
-
-.book-btn a{
-  margin: 0;
   color: #4a4a4a;
-  transition: all .2s ease;
 }
 
 .case-s .book-btn:hover {
   background-color: white;
-}
-
-.case-s .book-btn:hover a {
   color: #4a4a4a;
 }
 
 .book-btn:hover {
   background-color: #4a4a4a;
-}
-
-.book-btn:hover a {
   color: white;
 }
 
@@ -263,7 +252,7 @@ section {
   border: 2px solid white;
 }
 
-.sec-two .book-btn a{
+.sec-two .book-btn {
   color: white;
   display: inline;
   width: auto;
