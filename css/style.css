@@ -43,14 +43,6 @@ html, body {
   font-family: 'Calibre', sans-serif;
 }
 
-body {
-  background-image: url(../img/bg.jpg);
-  background-size: cover;
-  background-attachment: fixed;
-  height: 100vh;
-  position: relative;
-}
-
 .wrapper {
   width: 90%;
   margin: auto;
@@ -83,6 +75,14 @@ nav p {
 
 /*///HEADER STYLING///*/
 
+.landing {
+  background-image: url(../img/bg.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  height: 100vh;
+  position: relative;
+}
+
 header {
   display: flex;
   flex-direction: row;
@@ -91,7 +91,6 @@ header {
   width: 100%;
   height: calc(100vh - 108px);
   font-size: 35px;
-  min-height: 500px;
   background: rgba(74, 74, 74, 0.89);
 }
 
