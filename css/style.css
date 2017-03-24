@@ -43,6 +43,14 @@ html, body {
   font-family: 'Calibre', sans-serif;
 }
 
+body {
+  background-image: url(../img/bg.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  height: 100vh;
+  position: relative;
+}
+
 .wrapper {
   width: 90%;
   margin: auto;
@@ -55,7 +63,7 @@ nav {
   display: flex;
   width: 100%;
   padding: 20px;
-  background: #4a4a4a;
+  background: rgba(74, 74, 74, 0.89);
   color: white;
   font-size: 16px;
 }
@@ -84,7 +92,7 @@ header {
   height: calc(100vh - 108px);
   font-size: 35px;
   min-height: 500px;
-  background: #4a4a4a;
+  background: rgba(74, 74, 74, 0.89);
 }
 
 header h1 {
