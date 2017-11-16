@@ -49,23 +49,19 @@ html, body {
   margin-left: 70px;
 }
 
-/*///NAV STYLING///*/
-
-nav {
+.logo-holder {
   display: flex;
   width: 100%;
   padding: 20px;
-  background: rgba(74, 74, 74, 0.89);
   color: white;
   font-size: 16px;
+  margin-top: -5vh;
+  margin-bottom: 5vh;
 }
 
-nav .logo-holder {
-  margin-right: 60px;
-}
-
-nav .logo-holder img {
-  height: 60px;
+.logo-holder img {
+  margin: 0 auto;
+  height: 10vh;
 }
 
 nav p {
@@ -89,21 +85,26 @@ header {
   justify-content: center;
   position: relative;
   width: 100%;
-  height: calc(100vh - 108px);
+  height: 100vh;
   font-size: 35px;
-  background: rgba(74, 74, 74, 0.89);
+  background: rgba(47, 46, 46, 0.74);
 }
 
 header h1 {
-  width: 80%;
-  max-width: 500px;
-  margin: 0;
+  max-width: 600px;
+  margin: 0 auto;
   color: white;
   font-weight: 400;
+  text-align: center;
+}
+
+.book-outer {
+  width: 100%;
 }
 
 .book-btn {
-  display: inline-flex;
+  margin: 0 auto;
+  max-width: 223px;
   margin-top: 50px;
   padding: 20px;
   padding-bottom: 11px;
@@ -154,15 +155,6 @@ header .book-btn:hover,
 .links-holder a:last-of-type {
   font-weight: bold;
   text-decoration: underline;
-}
-
-.side-text {
-  position: absolute;
-  left: -30px;
-  bottom: 80px;
-  font-size: 18px;
-  transform: rotateZ(-90deg);
-  color: white;
 }
 
 /*///SECTION ONE STYLING///*/
@@ -451,9 +443,8 @@ footer {
 
 @media only screen and (max-width: 800px) {
   .links-holder {
-    position: static;
     flex-direction: column;
-    width: calc(100vw - 100px);
+    width: 100%;
     margin-top: 40px;
   }
 
@@ -502,7 +493,7 @@ footer {
 
 @media only screen and (max-width: 650px) {
   .wrapper {
-    margin-left: 30px;
+    margin: 1vh;
     display: flex;
     flex-direction: column;
     align-items: baseline;
@@ -517,12 +508,17 @@ footer {
     width: 80%;
   }
 
+  .landing {
+    background-size: initial;
+  }
+
   header h1 {
     font-size: 35px;
   }
 
   .book-btn {
     font-size: 18px;
+    max-width: 175px;
   }
 
   .sec-one {
