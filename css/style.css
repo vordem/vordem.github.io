@@ -44,9 +44,7 @@ html, body {
 }
 
 .wrapper {
-  width: 90%;
   margin: auto;
-  margin-left: 70px;
 }
 
 .logo-holder {
@@ -99,7 +97,8 @@ header h1 {
 }
 
 .book-outer {
-  width: 100%;
+  max-width: 223px;
+  margin: 0 auto;
 }
 
 .book-btn {
@@ -143,18 +142,22 @@ header .book-btn:hover,
 
 
 .links-holder {
-  display: flex;
-  justify-content: space-between;
+  /* display: flex; */
+  /* justify-content: space-between; */
   position: absolute;
   bottom: 10px;
-  width: 680px;
+  /* width: 680px; */
   font-size: 18px;
   color: white;
+  right: 0;
+  left: 0;
+  text-align: center;
 }
 
 .links-holder a:last-of-type {
   font-weight: bold;
   text-decoration: underline;
+  margin-left: 2vh;
 }
 
 /*///SECTION ONE STYLING///*/
@@ -443,8 +446,9 @@ footer {
 
 @media only screen and (max-width: 800px) {
   .links-holder {
-    flex-direction: column;
-    width: 100%;
+        /* flex-direction: column; */
+    /* width: 100%; */
+    /* margin: 0 auto; */
     margin-top: 40px;
   }
 
