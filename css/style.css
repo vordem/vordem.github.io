@@ -169,22 +169,40 @@ section {
 .sec {
   width: 100%;
   height: 100%;
-  padding: 100px 4vh;
+  padding: 0;
 }
 
-.sec-one {
+.wrapper {
+  display: flex;
+  flex-direction: row;
+}
+
+.sec-heading {
+  flex: 1;
+}
+
+.sec-img {
+  flex: 2;
+  background-image: url(../img/idea.jpg);
+  background-size: cover;
+}
+
+.sec-img img {
+  display: none;
 }
 
 .sec-heading {
   display: flex;
-  align-items: center;
+  flex-direction: column;
+  align-items: flex-start;
   font-size: 40px;
   color: #4a4a4a;
+  padding: 10vh;
 }
 
 .sec-heading h1 {
   font-weight: normal;
-  margin-right: 160px;
+  margin: 0;
 }
 
 .sec-heading h1 span {
@@ -192,8 +210,8 @@ section {
 }
 
 .sec-heading p {
-  width: 50%;
-  font-size: 24px;
+  width: 100%;
+  font-size: 20px;
 }
 
 .info-holders {
@@ -356,221 +374,18 @@ footer {
   margin-top: 10px;
 }
 
-@media only screen and (max-width: 1260px) {
-  .platforms {
-    width: 100%;
-    color: #9b9b9b;
-    font-size: 20px;
-    display: flex;
-    justify-content: space-around;
-    margin-bottom: 20px;
-  }
-
-  .sec-holder {
-    display: flex;
-    flex-direction: column;
-  }
-
-  .case-holder p {
-    width: 100%;
-    font-size: 24px;
-    margin-bottom: 20px;
-    display: block;
-  }
-
-  .case-holder img {
-    width: 60%;
-    margin-right: 50px;
-    flex-shrink: 0;
-  }
-}
-
-
-@media only screen and (max-width: 991px) {
-  header h1 {
-    font-size: 50px;
-  }
-
-  .sec-heading p {
-    width: 60%;
-    font-size: 24px;
-  }
-
-  .sec-heading h1 {
-    margin-right: 60px;
-  }
-}
-
-@media only screen and (max-width: 950px) {
-  .sec-two .wrapper {
-    margin: auto;
-  }
-
-  .case-holder {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .case-holder img {
-    max-width: initial;
-    height: initial;
-    width: 60%;
-    margin-right: 0px;
-    flex-shrink: 0;
-    min-width: initial;
-  }
-
-  .sec-three h1 {
-    font-size: 45px;
-  }
-
-  .sec-three p {
-    font-size: 40px;
-  }
-}
-
 @media only screen and (max-width: 900px) {
-  .sec-heading {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-
-  .sec-heading p {
-    width: 70%;
-    margin-bottom: 40px;
-  }
-}
-
-@media only screen and (max-width: 800px) {
-  .links-holder {
-        /* flex-direction: column; */
-    /* width: 100%; */
-    /* margin: 0 auto; */
-    margin-top: 40px;
-  }
-
-  .links-holder a {
-    margin-bottom: 10px;
-  }
-}
-
-@media only screen and (max-width: 768px) {
-  .info-holders {
-    flex-direction: column;
-    padding-left: 20px;
-  }
-
-  .sec-three {
-    padding-top: 50px;
-    padding-bottom: 50px;
-  }
-
-  .sec-three h1 {
-    font-size: 30px;
-  }
-
-  .sec-three p {
-    font-size: 25px;
-  }
-
-  .links-holder a {
-    margin-bottom: 10px;
-  }
-
-  .foot-wrap {
-    flex-direction: column;
-  }
-
-  .foot-con {
-    margin-bottom: 20px;
-  }
-}
-
-@media only screen and (max-width: 700px) {
-  .book-btn {
-    margin-bottom: 50px;
-  }
-}
-
-@media only screen and (max-width: 650px) {
   .wrapper {
-    margin: 1vh;
     display: flex;
     flex-direction: column;
-    align-items: baseline;
-    justify-content: center;
-  }
-
-  .side-text {
-    display: none;
-  }
-
-  .case-holder img {
-    width: 80%;
-  }
-
-  .landing {
-    background-size: initial;
-  }
-
-  header h1 {
-    font-size: 35px;
-  }
-
-  .book-btn {
-    font-size: 18px;
-    max-width: 175px;
-  }
-
-  .sec-one {
-    padding-top: 0;
-  }
-
-  .sec-three h1 {
-    font-size: 25px;
-  }
-
-  .sec-three p {
-    font-size: 20px;
-  }
-
-  .sec-three .book-btn {
-    margin-bottom: 10px;
-  }
-}
-
-@media only screen and (max-width: 600px) {
-  .platforms {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .case-details p {
-    font-size: 20px;
-  }
-}
-
-@media only screen and (max-width: 480px) {
-  .nav-title {
-    display: none;
   }
 
   .sec-heading {
-    font-size: 25px;
+    padding: 8vh;
   }
 
-  .sec-heading h1 span {
-    margin-right: 5px;
-  }
-
-  .sec-heading p {
+  .sec-img img {
+    display: block;
     width: 100%;
-    font-size: 20px;
-  }
-
-  header .wrapper h1 {
-    width: 100%;
-    max-width: 350px;
-    font-size: 25px;
   }
 }
