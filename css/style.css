@@ -243,6 +243,11 @@ section {
   margin: 0 auto;
 }
 
+.info-holder .subtitle {
+  font-weight: bold;
+  margin: 0;
+}
+
 .info-holder p {
   margin: 0;
 }
@@ -429,18 +434,31 @@ footer {
   }
 
   h1 {
-    font-size: 35px;
+    font-size: 33px;
+    text-align: center;
+    margin: 0 auto !important;
+  }
+
+  p {
+    font-size: 17px !important;
+    text-align: center;
   }
 
   .info-holder {
     display: flex;
+    flex-direction: column;
     width: 100%;
     text-align: left;
     margin-top: 60px;
   }
 
   .info-holder img {
-    margin-right: 20px;
+    margin-bottom: 20px;
+  }
+
+  .foot-con {
+    margin: 0 auto;
+    margin-bottom: 10px;
   }
 }
 
