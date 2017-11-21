@@ -199,6 +199,11 @@ section {
   padding: 10vh;
 }
 
+.sec-heading.portfolio {
+  padding-left: 2vh;
+  padding-right: 2vh;
+}
+
 .sec-heading h1 {
   font-weight: normal;
   margin: 0;
