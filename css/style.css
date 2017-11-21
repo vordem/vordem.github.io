@@ -366,12 +366,21 @@ footer {
 }
 
 .foot-link {
-  color: #9b9b9b;
+  color: white;
 }
 
 .foot-link a {
   margin-right: 20px;
   margin-top: 10px;
+}
+
+.foot-con .copyright {
+  color: #bdb7b7;
+}
+
+.contact-info a:last-of-type {
+  font-weight: bold;
+  text-decoration: underline;
 }
 
 @media only screen and (max-width: 900px) {
@@ -456,12 +465,17 @@ footer {
   }
 
   .foot-con {
+    width: 100%;
+    text-align: center;
     margin: 0 auto;
     margin-bottom: 10px;
+  }
+
+  .foot-con img {
+    margin: 0 auto;
   }
 
   .foot-link {
     margin: 0 auto;
   }
 }
-
