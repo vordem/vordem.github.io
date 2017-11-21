@@ -227,6 +227,10 @@ section {
   font-size: 20px;
 }
 
+.sec-heading p.paragraph {
+  max-width: 500px;
+}
+
 .sec-heading p a {
   text-decoration: underline;
   font-weight: bold;
@@ -431,6 +435,26 @@ footer {
 }
 
 @media only screen and (max-width: 900px) {
+  .landing {
+    background-size: initial;
+  }
+
+  header h1 {
+    padding-left: 4vh;
+    padding-right: 4vh;
+  }
+
+  h1 {
+    font-size: 33px;
+    text-align: center;
+    margin: 0 auto !important;
+  }
+
+  p {
+    font-size: 17px !important;
+    text-align: center;
+  }
+
   .wrapper {
     display: flex;
     flex-direction: column;
@@ -457,32 +481,6 @@ footer {
     width: 100%;
   }
 
-  .column {
-      width: 100%;
-  }
-}
-
-@media only screen and (max-width: 450px) {
-  .landing {
-    background-size: initial;
-  }
-
-  header h1 {
-    padding-left: 4vh;
-    padding-right: 4vh;
-  }
-
-  h1 {
-    font-size: 33px;
-    text-align: center;
-    margin: 0 auto !important;
-  }
-
-  p {
-    font-size: 17px !important;
-    text-align: center;
-  }
-
   .info-holder {
     display: flex;
     flex-direction: column;
@@ -493,6 +491,10 @@ footer {
 
   .info-holder img {
     margin-bottom: 20px;
+  }
+
+  .column {
+      width: 100%;
   }
 
   .foot-con {
