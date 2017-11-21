@@ -22,7 +22,6 @@
    font-family: 'Calibre';
       src: url('../font/Calibre-Bold.eot');
       src: url('../font/Calibre-Bold.eot?#iefix') format('embedded-opentype'),
-           url('../font/Calibre-Bold.woff') format('woff'),
            url('../font/Calibre-Bold.otf') format('opentype'),
            url('../font/Calibre-Bold.svg') format('svg');
    font-weight: 700;
@@ -77,6 +76,10 @@ nav p {
   position: relative;
 }
 
+.landing .wrapper {
+  display: block;
+}
+
 header {
   display: flex;
   flex-direction: row;
@@ -113,6 +116,7 @@ header h1 {
   cursor: pointer;
   transition: all .2s ease;
   color: #4a4a4a;
+  text-align: center;
 }
 
 header .book-btn {
@@ -182,9 +186,10 @@ section {
 }
 
 .sec-img {
-  flex: 2;
+  flex: 1;
   background-image: url(../img/idea.jpg);
   background-size: cover;
+  padding: 10vh;
 }
 
 .sec-img img {
@@ -214,43 +219,62 @@ section {
   font-size: 20px;
 }
 
+.sec-heading p a {
+  text-decoration: underline;
+  font-weight: bold;
+}
+
 .info-holders {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
   width: 100%;
-  max-width: 1000px;
 }
 
 .info-holder {
-  display: flex;
   width: 50%;
   color: #4a4a4a;
-  margin-bottom: 60px;
-}
-
-.info-holder:nth-of-type(3), .info-holder:nth-of-type(4) {
-  margin: 0;
-}
-
-.info-holder:nth-of-type(3) {
-  margin-bottom: 60px;
+  text-align: center;
+  margin-top: 60px;
 }
 
 .info-holder img {
   height: 100px;
-  margin-right: 35px;
+  margin: 0 auto;
+}
+
+.info-holder p {
+  margin: 0;
 }
 
 /*///SECTION TWO STYLING///*/
 
-.sec-two {
+.sec-dark {
   color: white;
   background-color: #4a4a4a;
 }
 
+.sec-dark .wrapper .sec-heading {
+  color: white;
+}
+
 .sec-holder {
   display: flex;
+}
+
+.sec-two .wrapper .sec-img {
+  flex: 1;
+  background-image: url(../img/demo.jpg);
+  background-size: cover;
+}
+
+.sec-two .wrapper .sec-img img {
+  display: none;
+}
+
+.sec-centered .wrapper .sec-heading h1 {
+  text-align: center;
+  margin: 0 auto;
 }
 
 .platforms {
@@ -384,8 +408,63 @@ footer {
     padding: 8vh;
   }
 
+  .sec-img {
+    padding: 0;
+  }
+
   .sec-img img {
-    display: block;
+    display: block !important;
     width: 100%;
   }
+
+  .column {
+      width: 100%;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  header h1 {
+    padding-left: 4vh;
+    padding-right: 4vh;
+  }
+
+  h1 {
+    font-size: 35px;
+  }
+
+  .info-holder {
+    display: flex;
+    width: 100%;
+    text-align: left;
+    margin-top: 60px;
+  }
+
+  .info-holder img {
+    margin-right: 20px;
+  }
+}
+
+
+/* Create four equal columns that floats next to each other */
+.column {
+    float: left;
+    width: 50%;
+    padding: 10px;
+}
+
+.column img {
+    margin-top: 12px;
+    width: 100%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media (max-width: 800px) {
+
 }
