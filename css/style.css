@@ -323,6 +323,20 @@ section {
   margin: -10vh;
 }
 
+.map img{
+  display: block;
+}
+
+.contact .wrapper .sec-heading .book-outer {
+  max-width: 300px;
+  margin: 0;
+}
+
+.contact .wrapper .sec-heading .book-outer .book-btn {
+  max-width: 300px;
+  margin-top: 0;
+}
+
 /*///FOOTER STYLING///*/
 
 footer {
@@ -432,6 +446,14 @@ footer {
     margin: 0;
   }
 
+  .contact .wrapper .sec-heading .book-outer {
+    max-width: 300px;
+    margin: 0 auto;
+  }
+
+  .contact .wrapper .sec-heading .book-outer .book-btn {
+    font-size: 22px;
+  }
 
   .foot-con {
     margin: 0 auto;
