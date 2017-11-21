@@ -1,8 +1,19 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-82588104-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-82588104-1');
+    </script>
+
     <meta charset="utf-8">
     <title>Vordem - Desarrollo y diseño de productos digitales</title>
+
     <meta name="viewport" content="initial-scale=1.0, width=device-width">
     <link rel="stylesheet" href="css/style.css">
 
@@ -25,7 +36,7 @@
 
           <div class="book-outer">
             <a href="#know-more">
-              <div class="book-btn">
+              <div class="book-btn dark">
                 Descubre más
               </div>
             </a>
@@ -200,9 +211,26 @@
             <img src="img/clients/tenoli.png" />
           </div>
 
+        </div>
+      </div>
+    </section>
+
+    <section class="sec sec-dark">
+      <div class="wrapper">
+        <div class="sec-img">
+          <div id="map" class="map"></div>
+        </div>
+
+        <div class="sec-heading">
+          <h1><span>Trabajemos</span> juntos</h1>
+
+          <p class="paragraph">
+            ¿Necesitas ayuda para iniciar un proyecto? Convertirlo en una realidad está a una conversación de distancia.
+          </p>
+
           <div class="book-outer">
-            <a href="mailto:hola@vordem.mx?Subject=Mi%20proyecto">
-              <div class="book-btn">
+            <a href="mailto:hola@vordem.mx">
+              <div class="book-btn dark">
                 Contáctanos
               </div>
             </a>
@@ -236,6 +264,21 @@
       </div>
     </footer>
 
-    <script type="js/script.js"></script>
+    <script>
+      function initMap() {
+        var vordem = {lat: 25.6884776, lng: -100.3566586};
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 17,
+          center: vordem
+        });
+        var marker = new google.maps.Marker({
+          position: vordem,
+          map: map
+        });
+      }
+    </script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBEwAuYiNW_M2jTDkQBHp2aPBwEPIQ_HQg&callback=initMap">
+    </script>
   </body>
 </html>
