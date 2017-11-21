@@ -1,3 +1,4 @@
+/*** uncss> filename: http://vordem.mx/css/style.css ***/
 @font-face {
    font-family: 'Calibre';
       src: url('../font/Calibre-Regular.eot');
@@ -61,11 +62,6 @@ html, body {
   height: 10vh;
 }
 
-nav p {
-  margin-top: 5px;
-  margin-bottom: 0;
-}
-
 /*///HEADER STYLING///*/
 
 .landing {
@@ -124,8 +120,7 @@ header .book-btn {
   border-color: white;
 }
 
-header .book-btn:hover,
-.case-s .book-btn:hover {
+header .book-btn:hover {
   background-color: white;
   color: #4a4a4a;
 }
@@ -133,15 +128,6 @@ header .book-btn:hover,
 .book-btn:hover {
   background-color: #4a4a4a;
   color: white;
-}
-
-.case-details p {
-  width: auto;
-  max-width: 595px;
-}
-
-.case-details .book-btn {
-  margin-top: 10px;
 }
 
 
@@ -277,10 +263,6 @@ section {
   color: white;
 }
 
-.sec-holder {
-  display: flex;
-}
-
 .sec-two .wrapper .sec-img {
   flex: 1;
   background-image: url(../img/demo.jpg);
@@ -294,41 +276,6 @@ section {
 .sec-centered .wrapper .sec-heading h1 {
   text-align: center;
   margin: 0 auto;
-}
-
-.platforms {
-  width: 240px;
-  color: #9b9b9b;
-  font-size: 20px;
-}
-
-.plat p {
-    margin-top: 0;
-}
-
-.plat {
-    margin-bottom: 40px;
-}
-
-.small-img {
-  height: 60px;
-  margin-right: 20px;
-}
-
-.os-img {
-  height: 40px;
-  margin-right: 30px;
-}
-
-.sec-two .book-btn {
-  border: 2px solid white;
-}
-
-.sec-two .book-btn {
-  color: white;
-  display: inline;
-  width: auto;
-  margin-bottom: 0;
 }
 
 .column {
@@ -348,54 +295,7 @@ section {
     clear: both;
 }
 
-.case-s {
-  position: relative;
-}
-
-.case-holder {
-  display: flex;
-  font-size: 20px;
-  justify-content: space-between;
-}
-
-.case-holder img {
-  max-width: 680px;
-  height: 100%;
-  width: calc(100% - 761px);
-  margin-right: 50px;
-  flex-shrink: 0;
-  min-width: 471px;
-}
-
-.case-holder p{
-  width: 100%;
-  font-size: 30px;
-  margin-bottom: 80px;
-  display: block;
-}
-
-.case-holder p span{
-  color: #9b9b9b;
-}
-
 /*///SECTION THREE STYLING///*/
-
-.sec-three {
-  color: #4a4a4a;
-}
-
-.sec-three p{
-  font-size: 23px;
-  margin-top: 0;
-  font-size: 40px;
-}
-
-.sec-three h1{
-  width: 100%;
-  margin: 0;
-  font-size: 60px;
-  font-weight: 500;
-}
 
 /*///FOOTER STYLING///*/
 
@@ -509,3 +409,4 @@ footer {
     margin: 0 auto;
   }
 }
+
