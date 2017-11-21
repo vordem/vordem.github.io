@@ -196,6 +196,14 @@ section {
   display: none;
 }
 
+.sec-img.first {
+  display: block;
+}
+
+.sec-img.second {
+  display: none;
+}
+
 .sec-heading {
   display: flex;
   flex-direction: column;
@@ -319,6 +327,23 @@ section {
   margin-bottom: 0;
 }
 
+.column {
+    float: left;
+    width: 50%;
+    padding: 1vh;
+}
+
+.column img {
+    margin-top: 12px;
+    width: 100%;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
 .case-s {
   position: relative;
 }
@@ -419,6 +444,14 @@ footer {
     padding: 0;
   }
 
+  .sec-img.first {
+    display: none;
+  }
+
+  .sec-img.second {
+    display: block;
+  }
+
   .sec-img img {
     display: block !important;
     width: 100%;
@@ -430,6 +463,10 @@ footer {
 }
 
 @media only screen and (max-width: 450px) {
+  .landing {
+    background-size: initial;
+  }
+
   header h1 {
     padding-left: 4vh;
     padding-right: 4vh;
@@ -462,29 +499,8 @@ footer {
     margin: 0 auto;
     margin-bottom: 10px;
   }
-}
 
-
-/* Create four equal columns that floats next to each other */
-.column {
-    float: left;
-    width: 50%;
-    padding: 10px;
-}
-
-.column img {
-    margin-top: 12px;
-    width: 100%;
-}
-
-/* Clear floats after the columns */
-.row:after {
-    content: "";
-    display: table;
-    clear: both;
-}
-
-/* Responsive layout - makes a two column-layout instead of four columns */
-@media (max-width: 800px) {
-
+  .foot-link {
+    margin: 0 auto;
+  }
 }
